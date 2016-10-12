@@ -9,4 +9,9 @@ public class CalculatorTest{
 	public void testEmptyString() {
 		assertEquals(0, Calculator.add(""));
 	}
+	
+	@Test
+	public void testSumsTwoNumbers() {
+		assertEquals(7, Calculator.add("3,4"));
+	}
 }
