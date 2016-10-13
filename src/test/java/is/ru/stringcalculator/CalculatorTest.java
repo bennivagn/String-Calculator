@@ -11,6 +11,11 @@ public class CalculatorTest{
 	}
 	
 	@Test
+	public void testSumOneNumber() {
+		assertEquals(7, Calculator.add("7"));
+	}
+	
+	@Test
 	public void testSumsTwoNumbers() {
 		assertEquals(7, Calculator.add("3,4"));
 	}

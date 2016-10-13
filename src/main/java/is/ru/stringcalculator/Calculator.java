@@ -10,6 +10,11 @@ public class Calculator {
 			return 0;
 		}
 		
+		if(text.length() == 1)
+		{
+			return Integer.parseInt(text);
+		}
+		
 		else
 		{
 			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
