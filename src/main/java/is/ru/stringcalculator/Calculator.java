@@ -17,8 +17,19 @@ public class Calculator {
 		
 		else
 		{
-			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+			return sum(numbers);
 		}
+	}
+	
+	private static int sum(String[] stringarray)
+	{
+		int totalsum = 0;
+		for(int i = 0; i < stringarray.length;i++)
+		{
+			totalsum += Integer.parseInt(stringarray[i]);
+		}
+		
+		return totalsum;
 	}
 
 }
