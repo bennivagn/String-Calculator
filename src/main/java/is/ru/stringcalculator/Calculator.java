@@ -49,7 +49,12 @@ public class Calculator {
 		int totalsum = 0;
 		for(int i = 0; i < stringarray.length;i++)
 		{
-			totalsum += Integer.parseInt(stringarray[i]);
+			int number = Integer.parseInt(stringarray[i]);
+			if(number <= 1000)
+			{
+				totalsum += number;
+			}
+			
 		}
 		
 		return totalsum;

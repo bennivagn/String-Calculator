@@ -48,4 +48,11 @@ public class CalculatorTest{
 		
 		Calculator.add("4,1,10,-542");
 	}
+	
+	@Test
+	public void testLargeNumber() throws Exception
+	{
+		assertEquals(10,Calculator.add("2532,10,5532"));
+	}
+	
 }
