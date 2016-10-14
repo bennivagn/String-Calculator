@@ -34,4 +34,10 @@ public class CalculatorTest{
 	public void testSumOfMany3() {
 		assertEquals(695,Calculator.add("54,23,92,521,5"));
 	}
+	
+	@Test
+	public void addWithNewLine()
+	{
+		assertEquals(6,Calculator.add("1\n2,3"));
+	}
 }
